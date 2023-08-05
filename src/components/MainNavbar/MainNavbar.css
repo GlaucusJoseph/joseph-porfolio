@@ -1,0 +1,22 @@
+.link-style {
+  color: #855f5a;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.5s ease, font-size 0.5s ease;
+}
+
+.link-style:hover {
+  color: #3b2c2a;
+  font-size: 22px;
+  transition-delay: 0.4s;
+}
+
+.link-style:focus {
+  outline: none;
+}
+
+.navbar-new-style {
+  background-color: #afe0ce;
+  opacity: 0.9;
+  height: 4rem;
+}

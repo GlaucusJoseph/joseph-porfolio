@@ -1,6 +1,8 @@
+import "./MainNavbar.css";
+
 export const MainNavbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg navbar-new-style">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -18,19 +20,19 @@ export const MainNavbar = () => {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mb-2 mb-lg-0 text-center">
-            <li className="nav-item">
-              <a className="nav-link mx-5" aria-current="page" href="#">
+            <li className="nav-item mx-5">
+              <a className="link-style" aria-current="page" href="#">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <a className="link-style" aria-current="page" href="#experience">
                 Experience
               </a>
             </li>
             <li className="nav-item mx-5">
-              <a className="nav-link" aria-current="page" href="#">
-                Home
+              <a className="link-style" aria-current="page" href="#projects">
+                Projects
               </a>
             </li>
           </ul>
