@@ -1,5 +1,6 @@
 .top-div {
   position: fixed;
+  margin-top: 0.3rem;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -7,8 +8,9 @@
   max-width: 600px;
   background-color: black;
   border-width: 1px;
-  border-color: green; /* Change the border color to something contrasting */
-  border-style: solid; /* Add border style */
+  border-color: green;
+  border-style: solid;
+  border-radius: 30px 30px 30px 30px; /* Valores de border-radius para las esquinas */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,7 +26,7 @@
 
 @media (max-width: 600px) {
   .top-div {
-    width: 100%;
+    width: 95%;
     max-width: none;
   }
 }

@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <MainNavbar />
-      <div className="mt-5">Hola</div>
     </>
   );
 }
