@@ -20,9 +20,16 @@
   z-index: 1000;
 }
 
-.top-div p {
-  margin: 0;
-  font-size: 18px;
+.top-div a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: text-shadow 0.2s;
+}
+
+.top-div a:hover {
+  text-shadow: 0px 2px 8px rgba(144, 252, 4, 0.966);
 }
 
 @media (max-width: 600px) {
