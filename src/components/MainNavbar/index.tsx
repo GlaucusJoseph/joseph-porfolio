@@ -2,7 +2,7 @@ import "./index.css";
 
 export const MainNavbar = () => {
   return (
-    <div className="top-div">
+    <div className="top-div border-shadow">
       <a href="#about">About me</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>

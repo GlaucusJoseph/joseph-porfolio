@@ -1,0 +1,18 @@
+.about-box {
+  margin-top: 10rem;
+  overflow: hidden;
+  width: 65%;
+}
+
+.image-container {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.main-content-box {
+  height: 300px;
+}
+
+.secondary-content-box {
+  height: 200px;
+}
