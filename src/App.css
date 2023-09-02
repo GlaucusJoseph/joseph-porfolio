@@ -11,3 +11,37 @@ body {
   box-shadow: rgba(28, 241, 0, 0.3) 0px 19px 38px,
     rgba(23, 7, 236, 0.22) 0px 15px 12px;
 }
+
+/* Line style and animation */
+.animated-line {
+  position: relative;
+  height: 2px;
+  background: linear-gradient(to right, green, #0d927c);
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.animated-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, green, #3498db);
+  animation: colorChange 2s linear infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Higlight text */ 
+.special-text-color {
+  color: rgb(128, 218, 198)
+}
