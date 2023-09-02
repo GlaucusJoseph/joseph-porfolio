@@ -1,4 +1,9 @@
-export const GithubIcon = () => {
+interface IconProps {
+  width?: string;
+  height?: string;
+}
+
+export const GithubIcon: React.FC<IconProps> = ({ width, height }) => {
   return (
     <svg
       viewBox="0 0 20 20"
@@ -6,12 +11,14 @@ export const GithubIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       fill="#000000"
+      width={width}
+      height={height}
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         <title>github [#142]</title> <desc>Created with Sketch.</desc>
@@ -19,7 +26,7 @@ export const GithubIcon = () => {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
           fill-rule="evenodd"
         >

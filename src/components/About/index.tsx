@@ -1,4 +1,5 @@
-import { ReactIcon } from "../../assets/ReactIcon";
+import { GithubIcon } from "../../assets/GithubIcon";
+import { LinkedinIcon } from "../../assets/LinkedinIcon";
 import josephImage from "../../assets/foto-joseph.jpeg";
 import "./index.css";
 
@@ -6,24 +7,24 @@ export const About = () => {
   return (
     <div className="container border-shadow about-box">
       <div className="row">
-        <div className="col-6 main-content-box">
-          Full Stack Developer with expertise in JavaScript, TypeScript, React,
-          Node.js, Meteor.js, Git. Skilled in QA, API integration, and
-          problem-solving. Strong in teamwork, project management, and
-          adaptability.
-        </div>
-        <div className="col-6 main-content-box">
+        <div className="col-12 col-md-6 main-content-box">
           <div className="image-container">
             <img src={josephImage} alt="Joseph" />
           </div>
         </div>
-        <div className="col-6 secondary-content-box">
-          <h3>Tecnologias</h3>
+        <div className="col-12 col-md-6 main-content-box">
+          <h3>Hello, I am Joseph Ortega!</h3>
+          <label className="my-3">
+            Full Stack Developer with expertise in JavaScript, TypeScript,
+            React, Node.js, Meteor.js, Git. Skilled in QA, API integration, and
+            problem-solving. Strong in teamwork, project management, and
+            adaptability.
+          </label>
           <div className="container">
-            <ReactIcon />
+            <LinkedinIcon width="70" height="70" />
+            <LinkedinIcon width="70" height="70" />
           </div>
         </div>
-        <div className="col-6 secondary-content-box">aaaaaaa</div>
       </div>
     </div>
   );
