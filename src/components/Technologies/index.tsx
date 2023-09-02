@@ -29,7 +29,7 @@ export const Technologies = () => {
   return (
     <div className="container technologies-box">
       <h4 className="my-4">Technologies</h4>
-      <div className="line" />
+      <div className="animated-line" />
       <div className="container icons-space">
         {iconsList.map((icon, index) => (
           <div className="icon-with-text" key={index}>

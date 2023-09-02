@@ -48,12 +48,21 @@ export const About = () => {
           </div>
         </div>
         <div className="col-12 col-md-6 main-content-box">
-          <h3>Hi, I am Joseph Ortega!</h3>
+          <h3>
+            Hi, I am <label className="special-text-color">Joseph Ortega</label>
+            !
+          </h3>
           <label className="my-3">
-            Full Stack Developer with expertise in JavaScript, TypeScript,
-            React, Node.js, Meteor.js, Git. Skilled in QA, API integration, and
-            problem-solving. Strong in teamwork, project management, and
-            adaptability.
+            <label className="special-text-color">Full Stack Developer</label>{" "}
+            specializing in
+            <label className="special-text-color">
+              JavaScript, TypeScript, React, Node.js, Meteor.js, and Git
+            </label>
+            . Highly skilled in <label className="special-text-color">QA</label>
+            ,<label className="special-text-color">API integration</label>, and
+            problem-solving, with a strong aptitude for teamwork and
+            adaptability. Committed to seeking innovative solutions and
+            contributing valuable skills to drive transformative outcomes.
           </label>
           <div className="container">
             <IconLinkEnvelop
