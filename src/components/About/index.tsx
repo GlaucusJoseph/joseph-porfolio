@@ -53,13 +53,13 @@ export const About = () => {
             !
           </h3>
           <label className="my-3">
-            <label className="special-text-color">Full Stack Developer</label>{" "}
-            specializing in
-            <label className="special-text-color">
+            <span className="special-text-color">Full Stack Developer </span>
+            specializing in&nbsp;
+            <span className="special-text-color">
               JavaScript, TypeScript, React, Node.js, Meteor.js, and Git
-            </label>
-            . Highly skilled in <label className="special-text-color">QA</label>
-            ,<label className="special-text-color">API integration</label>, and
+            </span>
+            . Highly skilled in <span className="special-text-color">QA</span>,{" "}
+            <span className="special-text-color">API integration</span>, and
             problem-solving, with a strong aptitude for teamwork and
             adaptability. Committed to seeking innovative solutions and
             contributing valuable skills to drive transformative outcomes.
