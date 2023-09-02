@@ -8,9 +8,57 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-right: 20px;
+  margin-top: 0.4rem;
 }
 
 .icon-text {
-  margin-top: 8px;
+  margin-top: 0.4rem;
+}
+
+.icons-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Mobile view*/
+@media (max-width: 768px) {
+  .icons-space {
+    /* Cambiar .icons-container a .icons-space */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icon-with-text {
+    margin: 0.5rem;
+    text-align: center;
+  }
+}
+/* Line style and animation */
+.line {
+  position: relative;
+  height: 2px;
+  background: linear-gradient(to right, green, #0d927c);
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, green, #3498db);
+  animation: colorChange 2s linear infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }

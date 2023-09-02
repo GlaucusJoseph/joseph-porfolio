@@ -1,27 +1,42 @@
-import { CSharpIcon, CypressIcon, GitIcon, GithubIcon, JavaScriptIcon, MeteorIcon, MongoDBIcon, NodeJSIcon, ReactIcon, TypeScriptIcon } from "../../assets/svg";
+import {
+  CSharpIcon,
+  CypressIcon,
+  GitIcon,
+  GithubIcon,
+  JavaScriptIcon,
+  MeteorIcon,
+  MongoDBIcon,
+  NodeJSIcon,
+  ReactIcon,
+  TypeScriptIcon,
+} from "../../assets/svg";
 import "./index.css";
 
 export const Technologies = () => {
+  const iconsList = [
+    { Icon: JavaScriptIcon, text: "JavaScript" },
+    { Icon: NodeJSIcon, text: "NodeJS" },
+    { Icon: ReactIcon, text: "React.js" },
+    { Icon: TypeScriptIcon, text: "TypeScript" },
+    { Icon: MeteorIcon, text: "Meteor.js" },
+    { Icon: MongoDBIcon, text: "MongoDB" },
+    { Icon: CypressIcon, text: "Cypress" },
+    { Icon: CSharpIcon, text: "C#" },
+    { Icon: GitIcon, text: "Git" },
+    { Icon: GithubIcon, text: "GitHub" },
+  ];
+
   return (
-    <div className="container border-shadow technologies-box">
-      <h4 className="mt-4">Technologies</h4>
-      <div className="container">
-        <div className="icon-with-text">
-          <CSharpIcon width="70" height="70" />
-          <span className="icon-text">C#</span>
-        </div>
-        <div className="icon-with-text">
-          <CypressIcon width="70" height="70" />
-          <span className="icon-text">C#</span>
-        </div>
-        <GithubIcon width="70" height="70" />
-        <GitIcon width="70" height="70" />
-        <JavaScriptIcon width="70" height="70" />
-        <MeteorIcon width="70" height="70" />
-        <MongoDBIcon width="70" height="70" />
-        <NodeJSIcon width="70" height="70" />
-        <ReactIcon width="70" height="70" />
-        <TypeScriptIcon width="70" height="70" />
+    <div className="container technologies-box">
+      <h4 className="my-4">Technologies</h4>
+      <div className="line" />
+      <div className="container icons-space">
+        {iconsList.map((icon, index) => (
+          <div className="icon-with-text" key={index}>
+            <icon.Icon width="70" height="70" />
+            <span className="icon-text">{icon.text}</span>
+          </div>
+        ))}
       </div>
     </div>
   );
