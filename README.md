@@ -1,3 +1,5 @@
+To this day this is more like a playground to test CSS and not a real porfolio. This will be probably be my portfolio in the future, tho.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
