@@ -1,4 +1,5 @@
-import { IconProps } from "../Interfaces";
+import { IconProps } from "../../Interfaces";
+
 
 export const CypressIcon: React.FC<IconProps> = ({ width, height }) => {
   return (

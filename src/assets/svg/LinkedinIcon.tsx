@@ -1,7 +1,5 @@
-interface IconProps {
-  width?: string;
-  height?: string;
-}
+import { IconProps } from "../../Interfaces";
+
 
 export const LinkedinIcon: React.FC<IconProps> = ({ width, height }) => {
   return (
