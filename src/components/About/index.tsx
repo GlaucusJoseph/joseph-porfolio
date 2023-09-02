@@ -1,5 +1,5 @@
 import { LinkedinIcon, GithubIcon } from "../../assets/svg";
-import josephImage from "../../assets/foto-joseph.jpeg";
+import josephImage from "../../assets/img/foto-joseph.jpeg";
 import "./index.css";
 
 interface IconProps {
