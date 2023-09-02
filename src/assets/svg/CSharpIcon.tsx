@@ -1,4 +1,6 @@
-export const CSharpIcon = () => {
+import { IconProps } from "../../Interfaces";
+
+export const CSharpIcon: React.FC<IconProps> = ({ width, height }) => {
   return (
     <svg
       viewBox="-16 0 288 288"
@@ -7,6 +9,8 @@ export const CSharpIcon = () => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
       fill="#000000"
+      width={width}
+      height={height}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g

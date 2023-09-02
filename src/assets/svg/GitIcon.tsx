@@ -1,6 +1,14 @@
-export const GitIcon = () => {
+import { IconProps } from "../Interfaces";
+
+export const GitIcon: React.FC<IconProps> = ({ width, height }) => {
   return (
-    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+    >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"

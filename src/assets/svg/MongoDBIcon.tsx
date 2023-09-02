@@ -1,9 +1,12 @@
-export const MongoDBIcon = () => {
+import { IconProps } from "../Interfaces";
+export const MongoDBIcon: React.FC<IconProps> = ({ width, height })=> {
   return (
     <svg
       viewBox="0 0 1024 1024"
       xmlns="http://www.w3.org/2000/svg"
       fill="#000000"
+      width={width}
+      height={height}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g

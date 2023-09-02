@@ -1,7 +1,4 @@
-interface IconProps {
-  width?: string;
-  height?: string;
-}
+import { IconProps } from "../Interfaces";
 
 export const GithubIcon: React.FC<IconProps> = ({ width, height }) => {
   return (

@@ -1,5 +1,4 @@
-import { GithubIcon } from "../../assets/GithubIcon";
-import { LinkedinIcon } from "../../assets/LinkedinIcon";
+import { LinkedinIcon, GithubIcon } from "../../assets/svg";
 import josephImage from "../../assets/foto-joseph.jpeg";
 import "./index.css";
 

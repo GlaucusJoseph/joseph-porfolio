@@ -1,9 +1,12 @@
-export const NodeJSIcon = () => {
+import { IconProps } from "../Interfaces";
+export const NodeJSIcon: React.FC<IconProps> = ({ width, height }) => {
   return (
     <svg
       viewBox="-3.8 -1.5 40.921 40.921"
       xmlns="http://www.w3.org/2000/svg"
       fill="#000000"
+      width={width}
+      height={height}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g

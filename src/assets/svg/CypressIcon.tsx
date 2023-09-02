@@ -1,4 +1,6 @@
-export const CypressIcon = () => {
+import { IconProps } from "../Interfaces";
+
+export const CypressIcon: React.FC<IconProps> = ({ width, height }) => {
   return (
     <svg
       viewBox="0 0 256 256"
@@ -7,6 +9,8 @@ export const CypressIcon = () => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
       fill="#000000"
+      width={width}
+      height={height}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g

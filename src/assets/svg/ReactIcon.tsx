@@ -1,4 +1,5 @@
-export const ReactIcon = () => {
+import { IconProps } from "../Interfaces";
+export const ReactIcon: React.FC<IconProps> = ({ width, height }) => {
   return (
     <svg
       viewBox="0 -14 256 256"
@@ -7,6 +8,8 @@ export const ReactIcon = () => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
       fill="#000000"
+      width={width}
+      height={height}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g

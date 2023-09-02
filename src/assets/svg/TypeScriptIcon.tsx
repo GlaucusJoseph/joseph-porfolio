@@ -1,4 +1,5 @@
-export const TypeScriptIcon = () => {
+import { IconProps } from "../Interfaces";
+export const TypeScriptIcon: React.FC<IconProps> = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +7,8 @@ export const TypeScriptIcon = () => {
       role="img"
       viewBox="0 0 512 512"
       fill="#000000"
+      width={width}
+      height={height}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
