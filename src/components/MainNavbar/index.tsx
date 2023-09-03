@@ -1,6 +1,6 @@
 import "./index.css";
 
-export const MainNavbar = () => {
+const MainNavbar = () => {
   return (
     <div className="top-div border-shadow">
       <a href="#about">About me</a>

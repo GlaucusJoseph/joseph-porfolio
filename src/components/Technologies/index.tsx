@@ -12,7 +12,7 @@ import {
 } from "../../assets/svg";
 import "./index.css";
 
-export const Technologies = () => {
+const Technologies = () => {
   const iconsList = [
     { Icon: JavaScriptIcon, text: "JavaScript" },
     { Icon: NodeJSIcon, text: "NodeJS" },
@@ -28,7 +28,7 @@ export const Technologies = () => {
 
   return (
     <div className="container technologies-box">
-      <h4 className="my-4">Technologies</h4>
+      <h3 className="my-2">Technologies</h3>
       <div className="animated-line" />
       <div className="container icons-space">
         {iconsList.map((icon, index) => (

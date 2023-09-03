@@ -35,7 +35,7 @@ const IconLinkEnvelop: React.FC<IconProps> = ({
   );
 };
 
-export const About = () => {
+const About = () => {
   const myGitHubUrl = "https://github.com/GlaucusJoseph";
   const myLinkedinUrl = "https://www.linkedin.com/in/josephortegaglaucus/";
 
@@ -58,7 +58,8 @@ export const About = () => {
             <span className="special-text-color">
               JavaScript, TypeScript, React, Node.js, Meteor.js, and Git
             </span>
-            . Highly skilled in <span className="special-text-color">QA</span>,{" "}
+            . Highly skilled in <span className="special-text-color">QA</span>
+            ,&nbsp;
             <span className="special-text-color">API integration</span>, and
             problem-solving, with a strong aptitude for teamwork and
             adaptability. Committed to seeking innovative solutions and
