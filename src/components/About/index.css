@@ -1,5 +1,5 @@
 .about-box {
-  margin-top: 5rem;
+  margin-top: 10rem;
   overflow: hidden;
   width: 85%;
 }
@@ -12,10 +12,6 @@
   text-align: center;
   padding: 1rem;
 }
-
-/* .main-content-box {
-  height: auto;
-} */
 
 .image-container {
   position: relative;

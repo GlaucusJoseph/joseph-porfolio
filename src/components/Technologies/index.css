@@ -1,5 +1,5 @@
 .technologies-box {
-  margin-top: 3rem;
+  margin-top: 10rem;
   width: 85%;
 }
 
@@ -23,7 +23,6 @@
 /*Mobile view*/
 @media (max-width: 768px) {
   .icons-space {
-    /* Cambiar .icons-container a .icons-space */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
