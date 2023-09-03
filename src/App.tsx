@@ -11,7 +11,7 @@ function App() {
       <MainNavbar />
       <About />
       <Technologies />
-      <WorkExperience/>
+      <WorkExperience />
     </>
   );
 }

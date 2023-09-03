@@ -27,18 +27,20 @@ const Technologies = () => {
   ];
 
   return (
-    <div className="container technologies-box">
-      <h3 className="my-2">Technologies</h3>
-      <div className="animated-line" />
-      <div className="container icons-space">
-        {iconsList.map((icon, index) => (
-          <div className="icon-with-text" key={index}>
-            <icon.Icon width="70" height="70" />
-            <span className="icon-text">{icon.text}</span>
-          </div>
-        ))}
+    <section id="technologies">
+      <div className="container technologies-box">
+        <h3 className="my-2">Technologies</h3>
+        <div className="animated-line" />
+        <div className="container icons-space">
+          {iconsList.map((icon, index) => (
+            <div className="icon-with-text" key={index}>
+              <icon.Icon width="70" height="70" />
+              <span className="icon-text">{icon.text}</span>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
