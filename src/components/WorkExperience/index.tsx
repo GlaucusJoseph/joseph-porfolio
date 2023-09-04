@@ -28,7 +28,7 @@ const WorkExperience = () => {
   return (
     <section id="experience">
       <div className="container work-experience-box">
-        <h3 className="my-2 d-flex flex-row-reverse">Work Experience</h3>
+        <h3 className="my-2">Work Experience</h3>
         <div className="animated-line" />
         <div className="row">
           <div className="col-12 col-md-6 work-section">
