@@ -1,0 +1,13 @@
+.curses-box {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  width: 85%;
+}
+
+.courses-icons {
+  display: flex;
+}
+
+.courses-icon-margin {
+  margin-right: 1rem;
+}
