@@ -43,12 +43,12 @@ const About = () => {
     <section id="about">
       <div className="container border-shadow about-box">
         <div className="row">
-          <div className="col-12 col-md-6 main-content-box">
+          <div className="col-12 col-md-4 main-content-box">
             <div className="image-container">
               <img src={josephImage} alt="Joseph" />
             </div>
           </div>
-          <div className="col-12 col-md-6 main-content-box">
+          <div className="col-12 col-md-7 main-content-box">
             <h3>
               Hi, I am&nbsp;
               <label className="special-text-color">Joseph Ortega</label>!
