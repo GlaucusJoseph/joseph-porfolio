@@ -9,6 +9,13 @@ import { MongoDBIcon } from "./MongoDBIcon";
 import { NodeJSIcon } from "./NodeJSIcon";
 import { ReactIcon } from "./ReactIcon";
 import { TypeScriptIcon } from "./TypeScriptIcon";
+import { CSSIcon } from "./CSSIcon";
+import { HTMLIcon } from "./HTMLIcon";
+import { DotNetCoreIcon } from "./DotNetCoreIcon";
+import { ASPNetIcon } from "./ASPNetIcon";
+import { BootstrapIcon } from "./BootstrapIcon";
+import { PostgreSQLIcon } from "./PostgreSQLIcon";
+import { EnglishIcon } from "./EnglishIcon";
 
 export {
   CSharpIcon,
@@ -22,4 +29,11 @@ export {
   NodeJSIcon,
   ReactIcon,
   TypeScriptIcon,
+  CSSIcon,
+  HTMLIcon,
+  DotNetCoreIcon,
+  ASPNetIcon,
+  BootstrapIcon,
+  PostgreSQLIcon,
+  EnglishIcon,
 };
