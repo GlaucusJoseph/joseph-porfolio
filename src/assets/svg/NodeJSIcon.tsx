@@ -25,9 +25,9 @@ export const NodeJSIcon: React.FC<IconProps> = ({ width, height }) => {
             y2="341.772"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".3" stop-color="#3e863d"></stop>
-            <stop offset=".5" stop-color="#55934f"></stop>
-            <stop offset=".8" stop-color="#5aad45"></stop>
+            <stop offset=".3" stopColor="#3e863d"></stop>
+            <stop offset=".5" stopColor="#55934f"></stop>
+            <stop offset=".8" stopColor="#5aad45"></stop>
           </linearGradient>
           <linearGradient
             id="d"
@@ -37,9 +37,9 @@ export const NodeJSIcon: React.FC<IconProps> = ({ width, height }) => {
             y2="239.465"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".57" stop-color="#3e863d"></stop>
-            <stop offset=".72" stop-color="#619857"></stop>
-            <stop offset="1" stop-color="#76ac64"></stop>
+            <stop offset=".57" stopColor="#3e863d"></stop>
+            <stop offset=".72" stopColor="#619857"></stop>
+            <stop offset="1" stopColor="#76ac64"></stop>
           </linearGradient>
           <linearGradient
             id="f"
@@ -49,11 +49,11 @@ export const NodeJSIcon: React.FC<IconProps> = ({ width, height }) => {
             y2="279.652"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".16" stop-color="#6bbf47"></stop>
-            <stop offset=".38" stop-color="#79b461"></stop>
-            <stop offset=".47" stop-color="#75ac64"></stop>
-            <stop offset=".7" stop-color="#659e5a"></stop>
-            <stop offset=".9" stop-color="#3e863d"></stop>
+            <stop offset=".16" stopColor="#6bbf47"></stop>
+            <stop offset=".38" stopColor="#79b461"></stop>
+            <stop offset=".47" stopColor="#75ac64"></stop>
+            <stop offset=".7" stopColor="#659e5a"></stop>
+            <stop offset=".9" stopColor="#3e863d"></stop>
           </linearGradient>
           <clipPath id="a">
             <path d="m239.03 226.605-42.13 24.317a5.085 5.085 0 0 0-2.546 4.406v48.668c0 1.817.968 3.496 2.546 4.406l42.133 24.336a5.1 5.1 0 0 0 5.09 0l42.126-24.336a5.096 5.096 0 0 0 2.54-4.406v-48.668c0-1.816-.97-3.496-2.55-4.406l-42.12-24.317a5.123 5.123 0 0 0-5.1 0"></path>
@@ -66,7 +66,7 @@ export const NodeJSIcon: React.FC<IconProps> = ({ width, height }) => {
           </clipPath>
         </defs>
         <g
-          clip-path="url(#a)"
+          clipPath="url(#a)"
           transform="translate(-68.564 -79.701) scale(.35278)"
         >
           <path
@@ -75,7 +75,7 @@ export const NodeJSIcon: React.FC<IconProps> = ({ width, height }) => {
           ></path>
         </g>
         <g
-          clip-path="url(#c)"
+          clipPath="url(#c)"
           transform="translate(-68.564 -79.701) scale(.35278)"
         >
           <path
@@ -84,7 +84,7 @@ export const NodeJSIcon: React.FC<IconProps> = ({ width, height }) => {
           ></path>
         </g>
         <g
-          clip-path="url(#e)"
+          clipPath="url(#e)"
           transform="translate(-68.564 -79.701) scale(.35278)"
         >
           <path
