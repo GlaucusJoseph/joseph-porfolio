@@ -1,9 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import MainNavbar from "./components/MainNavbar";
-import About from "./components/About";
-import Technologies from "./components/Technologies";
-import WorkExperience from "./components/WorkExperience";
+import {
+  About,
+  Courses,
+  MainNavbar,
+  Technologies,
+  WorkExperience,
+} from "./components";
 
 function App() {
   return (
@@ -12,6 +15,7 @@ function App() {
       <About />
       <Technologies />
       <WorkExperience />
+      <Courses />
     </>
   );
 }
