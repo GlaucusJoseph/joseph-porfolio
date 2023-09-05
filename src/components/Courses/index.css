@@ -9,5 +9,15 @@
 }
 
 .courses-icon-margin {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+}
+
+.course-box-size {
+  height: 7rem;
+}
+
+.course-box-size a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
