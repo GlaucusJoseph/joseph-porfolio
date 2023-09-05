@@ -15,10 +15,6 @@
   z-index: 1000;
 }
 
-.top-div-content {
-  max-width: 600px;
-}
-
 .top-div-content a {
   color: white;
   text-decoration: none;
@@ -34,7 +30,6 @@
 
 @media (max-width: 600px) {
   .top-div {
-    width: 95%;
     max-width: none;
   }
 }
