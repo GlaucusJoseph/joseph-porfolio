@@ -6,6 +6,7 @@ import {
   MainNavbar,
   Technologies,
   WorkExperience,
+  Projects,
 } from "./components";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Technologies />
       <WorkExperience />
       <Courses />
+      <Projects />
     </>
   );
 }
