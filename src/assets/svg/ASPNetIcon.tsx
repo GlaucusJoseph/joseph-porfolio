@@ -8,17 +8,17 @@ export const ASPNetIcon: React.FC<IconProps> = ({ width, height }) => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 512 512"
-      enable-background="new 0 0 512 512"
+      enableBackground="new 0 0 512 512"
       xmlSpace="preserve"
       stroke="#ffffff"
       width={width}
       height={height}
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         <g id="5151e0c8492e5103c096af88a51eafb7">
