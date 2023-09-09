@@ -16,8 +16,8 @@ function App() {
       <About />
       <Technologies />
       <WorkExperience />
-      <Courses />
       <Projects />
+      <Courses />
     </>
   );
 }
