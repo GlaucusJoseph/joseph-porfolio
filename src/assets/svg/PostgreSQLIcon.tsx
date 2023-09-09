@@ -15,15 +15,12 @@ export const PostgreSQLIcon: React.FC<IconProps> = ({ width, height }) => {
         fillRule="nonzero"
         stroke="none"
         strokeWidth="none"
-        strokeLinecap="none"
-        strokeLinejoin="none"
         strokeMiterlimit="10"
         strokeDasharray=""
         strokeDashoffset="0"
         fontFamily="none"
         fontWeight="none"
         fontSize="none"
-        strokemiterlimittextanchor="none"
         style={{ mixBlendMode: "normal" }}
       >
         <g transform="scale(2.56,2.56)">

@@ -6,7 +6,7 @@ import {
   MainNavbar,
   Technologies,
   WorkExperience,
-  Projects,
+  /* Projects, */
 } from "./components";
 
 function App() {

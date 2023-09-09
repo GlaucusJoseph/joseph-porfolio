@@ -1,6 +1,12 @@
 import "./index.css";
 
-const Title = ({ titleText, isOpen, setIsOpen }) => {
+interface TitleProps {
+  titleText: string;
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Title: React.FC<TitleProps> = ({ titleText, isOpen, setIsOpen }) => {
   const toggleButton = () => {
     // Función para alternar el estado
     const toggleSwitch = () => {

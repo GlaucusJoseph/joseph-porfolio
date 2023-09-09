@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import { PROJECTS_OBJECT_LIST } from "../../constants";
 import Title from "../Title";
@@ -20,6 +20,7 @@ const Projects = () => {
           <div className="container">
             <div className="row row-cols-1 row-cols-md-3 g-0 justify-content-center">
               {PROJECTS_OBJECT_LIST.map((project) => {
+                console.log(project);
                 return (
                   <div className="card">
                     <img
