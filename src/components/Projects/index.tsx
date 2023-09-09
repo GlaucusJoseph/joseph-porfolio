@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { CSSTransition } from "react-transition-group";
 import { PROJECTS_OBJECT_LIST } from "../../constants";
 import Title from "../Title";
 import "./index.css";
@@ -10,7 +11,12 @@ const Projects = () => {
     <section id="projects">
       <div className="container projects-box">
         <Title titleText="Projects" isOpen={isOpen} setIsOpen={setIsOpen} />
-        {isOpen && (
+        <CSSTransition
+          in={isOpen}
+          timeout={500}
+          classNames="fade"
+          unmountOnExit
+        >
           <div className="container">
             <div className="row row-cols-1 row-cols-md-3 g-0 justify-content-center">
               {PROJECTS_OBJECT_LIST.map((project) => {
@@ -43,7 +49,7 @@ const Projects = () => {
               })}
             </div>
           </div>
-        )}
+        </CSSTransition>
       </div>
     </section>
   );

@@ -32,7 +32,30 @@ body {
   }
 }
 
-/* Higlight text */ 
+/* Higlight text */
 .special-text-color {
-  color: rgb(128, 218, 198)
+  color: rgb(128, 218, 198);
+}
+
+/* Toggle */
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.1); /* Escala inicial más pequeña */
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1); /* Escala normal */
+  transition: opacity 500ms, transform 500ms, height 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1); /* Escala normal */
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(1); /* Escala más pequeña al salir */
+  transition: opacity 500ms, transform 500ms, height 500ms;
 }

@@ -1,3 +1,4 @@
+import { CSSTransition } from "react-transition-group";
 import {
   CSharpIcon,
   CypressIcon,
@@ -11,6 +12,8 @@ import {
   TypeScriptIcon,
 } from "../../assets/svg";
 import "./index.css";
+import Title from "../Title";
+import { useState } from "react";
 
 const Technologies = () => {
   const iconsList = [
@@ -26,19 +29,28 @@ const Technologies = () => {
     { Icon: GithubIcon, text: "GitHub" },
   ];
 
+  const [isOpen, setIsOpen] = useState(true);
+
   return (
     <section id="technologies">
       <div className="container technologies-box">
-        <h3 className="my-2">Technologies</h3>
-        <div className="animated-line" />
-        <div className="container icons-space">
-          {iconsList.map((icon, index) => (
-            <div className="icon-with-text" key={index}>
-              <icon.Icon width="70" height="70" />
-              <span className="icon-text">{icon.text}</span>
-            </div>
-          ))}
-        </div>
+        <Title titleText="Technologies" isOpen={isOpen} setIsOpen={setIsOpen} />
+
+        <CSSTransition
+          in={isOpen}
+          timeout={500}
+          classNames="fade"
+          unmountOnExit
+        >
+          <div className="container icons-space">
+            {iconsList.map((icon, index) => (
+              <div className="icon-with-text" key={index}>
+                <icon.Icon width="70" height="70" />
+                <span className="icon-text">{icon.text}</span>
+              </div>
+            ))}
+          </div>
+        </CSSTransition>
       </div>
     </section>
   );
