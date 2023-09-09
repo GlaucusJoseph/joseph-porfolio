@@ -8,9 +8,9 @@ const Courses = () => {
         <h3 className="my-2">Courses</h3>
         <div className="animated-line" />
         <div className="row">
-          {COURSES_OBJECT_LIST.map((course) => {
+          {COURSES_OBJECT_LIST.map((course, index) => {
             return (
-              <div className="col-12 col-md-6 course-box-size">
+              <div className="col-12 col-md-6 course-box-size" key={index}>
                 <a href={course.url} target="_blank" rel="noopener noreferrer">
                   <div className="row">
                     <div className="col-12">
