@@ -87,3 +87,14 @@ export const COURSES_OBJECT_LIST = [
     url: "https://www.efset.org/cert/SvwPMo",
   },
 ];
+
+export const PROJECTS_OBJECT_LIST = [
+  {
+    title: "Object-Oriented Programming Course: OOP",
+    description: "Platzi",
+    tags: "March 2021",
+    accessButtons: [CSharpIcon],
+    imgUrl:
+      "https://platzi.com/p/josephdavidortegacordova/curso/1474-oop/diploma/detalle/",
+  },
+];

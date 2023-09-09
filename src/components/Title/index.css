@@ -1,0 +1,41 @@
+
+/* TOGGLE */
+.toggle-container {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .toggle-switch {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(173, 16, 16);
+    border: 3px solid rgb(255, 255, 255); /* Agregar un borde blanco */
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-switch.on {
+    background-color: rgba(0, 224, 0, 0.61); /* Color cuando está encendido */
+  }
+  
+  .slider {
+    width: 20px; /* Reducir el tamaño del slider */
+    height: 20px; /* Reducir el tamaño del slider */
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 3px;
+    transform: translateY(-50%); /* Centrar verticalmente */
+    transition: transform 0.3s ease;
+  }
+  
+  .slider.on {
+    transform: translateX(30px) translateY(-50%); /* Mueve el slider hacia la derecha y lo centra verticalmente cuando está encendido */
+  
+    left: 2px;
+    background-color: rgb(255, 255, 255); /* Color cuando está encendido */
+  }
+  
