@@ -4,20 +4,67 @@
   width: 85%;
 }
 
-.courses-icons {
+.card {
+  position: relative;
+  width: 20rem;
+  height: 30rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.courses-icon-margin {
-  margin-right: 0.5rem;
+.card-description,
+.card-tags,
+.card-button-github,
+.card-button-website {
+  position: absolute;
+  display: flex;
+  color: #fff;
+  opacity: 0;
 }
 
-.course-box-size {
-  height: 7rem;
+.card-description {
+  bottom: 18rem;
+  left: 1rem;
 }
 
-.course-box-size a {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
+.card-tags {
+  bottom: 4rem;
+  left: 1rem;
+}
+
+.card-button-github {
+  bottom: 2rem;
+  left: 1rem;
+}
+
+.card-button-website {
+  bottom: 2rem;
+  left: 6rem;
+}
+
+.card:hover .card-content,
+.card:hover .card-description,
+.card:hover .card-tags,
+.card:hover .card-button-github,
+.card:hover .card-button-website {
+  opacity: 1;
 }
