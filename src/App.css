@@ -1,6 +1,6 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: #102a43;
+  color: #f0f4f8;
 }
 
 /* Line style and animation */
@@ -34,7 +34,7 @@ body {
 
 /* Higlight text */
 .special-text-color {
-  color: rgb(128, 218, 198);
+  color: #8eedc7;
 }
 
 /* Toggle */

@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  color: #f0f4f8;
   padding: 20px;
   opacity: 0;
   transition: opacity 0.3s;
@@ -37,7 +37,7 @@
 .card-button-website {
   position: absolute;
   display: flex;
-  color: #fff;
+  color: #f0f4f8;
   opacity: 0;
 }
 

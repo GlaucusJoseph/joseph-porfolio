@@ -8,10 +8,10 @@ interface TitleProps {
 
 const Title: React.FC<TitleProps> = ({ titleText, isOpen, setIsOpen }) => {
   const toggleButton = () => {
-    // Función para alternar el estado
     const toggleSwitch = () => {
       setIsOpen(!isOpen);
     };
+
     return (
       <div className="toggle-container">
         <div
