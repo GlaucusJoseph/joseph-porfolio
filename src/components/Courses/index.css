@@ -4,12 +4,21 @@
   width: 85%;
 }
 
-.courses-icons {
+.courses-tags {
   display: flex;
 }
 
-.courses-icon-margin {
+.courses-tag {
   margin-right: 0.5rem;
+  background-color: #243b53;
+  height: 2rem;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #486581;
+  border-radius: 50px;
+  user-select: none;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que no cabe en el contenedor */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto cortado */
 }
 
 .course-box-size {
@@ -20,4 +29,21 @@
   color: #f0f4f8;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Estilo base del botón */
+.boton-enlace {
+  padding: 5px; /* Ajusta el relleno según tus preferencias */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  text-decoration: none; /* Elimina la subrayado predeterminado del enlace */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 0.5rem; /* Agrega esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+/* Cambia el color de fondo al pasar el cursor sobre el botón */
+.boton-enlace:hover {
+  background-color: #0056b3; /* Nuevo color de fondo al pasar el cursor */
 }

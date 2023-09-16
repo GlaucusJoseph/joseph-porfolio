@@ -19,34 +19,35 @@ const Courses = () => {
         >
           <div className="row">
             {COURSES_OBJECT_LIST.map((course, index) => {
+              console.log(course);
               return (
                 <div className="col-12 col-md-6 course-box-size" key={index}>
-                  <a
-                    href={course.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="row">
-                      <div className="col-12">
-                        <h6>
-                          {course.institution} /&nbsp;
-                          <span className="special-text-color">
-                            {course.title}
-                          </span>
-                        </h6>
-                      </div>
-                      <div className="col-12">{course.date}</div>
-                      <div className="col-12">
-                        <div className="courses-icons">
-                          {course.technologies.map((Icon, index) => (
-                            <div key={index} className="courses-icon-margin">
-                              <Icon width="30" height="30" />
-                            </div>
-                          ))}
-                        </div>
+                  <div className="row">
+                    <div className="col-12">
+                      <h6>
+                        {course.institution} /&nbsp;
+                        <span className="special-text-color">
+                          {course.title}
+                        </span>
+                      </h6>
+                    </div>
+                    <div className="col-12">
+                      <div className="courses-tags">
+                        {course.technologies.map((technology, index) => (
+                          <div key={index} className="courses-tag">
+                            &lt;{technology.name}/&gt;
+                          </div>
+                        ))}
                       </div>
                     </div>
-                  </a>
+                    {course.url && (
+                      <div>
+                        <a href={course.url} className="boton-enlace">
+                          View certificate
+                        </a>
+                      </div>
+                    )}
+                  </div>
                 </div>
               );
             })}
