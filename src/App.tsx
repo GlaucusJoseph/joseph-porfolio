@@ -6,7 +6,7 @@ import {
   MainNavbar,
   Technologies,
   WorkExperience,
-  Projects,
+  /*   Projects, */
 } from "./components";
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
       <MainNavbar />
       <About />
       <WorkExperience />
-      <Projects />
+      {/* 
+      <Projects /> */}
       <Technologies />
       <Courses />
     </>
