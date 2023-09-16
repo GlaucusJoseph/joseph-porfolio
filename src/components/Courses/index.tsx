@@ -41,7 +41,7 @@ const Courses = () => {
                       </div>
                     </div>
                     {course.url && (
-                      <div className="button-envelop">
+                      <div className="course-button-envelop">
                         <a
                           href={course.url}
                           className="course-button"

@@ -1,9 +1,4 @@
-.about-border-shadow {
-  border-bottom: 2px solid #334e68;
-  box-shadow: #334e68 0px 19px 38px, #102a43 0px 15px 12px;
-}
-
-.top-div {
+.navbar-box {
   position: fixed;
   top: 0;
   width: 100%;
@@ -14,21 +9,35 @@
   z-index: 1000;
 }
 
-.top-div-content a {
-  color: white;
+.navbar-box-content {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-box-content li {
+  margin: 0 0.3rem;
+}
+
+.navbar-box-content a {
+  color: #f0f4f8;
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
   transition: text-shadow 0.2s;
-  margin-inline: 0.5rem;
+  user-select: none;
 }
 
-.top-div a:hover {
+.navbar-separator {
+  color: #f0f4f8;
+  user-select: none;
+}
+
+.navbar-border-shadow {
+  border-bottom: 2px solid #334e68;
+  box-shadow: 0px 2px 8px rgba(62, 189, 147, 0.5);
+}
+
+.navbar-box-content a:hover {
   text-shadow: 0px 2px 8px #3ebd93;
-}
-
-@media (max-width: 600px) {
-  .top-div {
-    max-width: none;
-  }
 }
