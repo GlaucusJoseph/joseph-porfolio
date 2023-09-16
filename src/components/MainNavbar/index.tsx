@@ -9,7 +9,7 @@ const MainNavbar = () => {
     >
       <ul className="navbar-box-content">
         <li>
-          <a href="#about">About me</a>
+          <a href="#about">About</a>
         </li>
         <li>
           <span className="navbar-separator">/</span>
