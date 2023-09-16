@@ -9,7 +9,7 @@ const Courses = () => {
 
   return (
     <section id="courses">
-      <div className="container curses-box">
+      <div className="container courses-box">
         <Title titleText="Courses" isOpen={isOpen} setIsOpen={setIsOpen} />
         <CSSTransition
           in={isOpen}
@@ -21,9 +21,9 @@ const Courses = () => {
             {COURSES_OBJECT_LIST.map((course, index) => {
               console.log(course);
               return (
-                <div className="col-12 col-md-6 course-box-size" key={index}>
-                  <div className="row">
-                    <div className="col-12">
+                <div className="col-12 col-md-6" key={index}>
+                  <div className="row container course-box">
+                    <div className="col-12 course-title-envelop">
                       <h6>
                         {course.institution} /&nbsp;
                         <span className="special-text-color">
@@ -41,10 +41,10 @@ const Courses = () => {
                       </div>
                     </div>
                     {course.url && (
-                      <div>
+                      <div className="button-envelop">
                         <a
                           href={course.url}
-                          className="boton-enlace"
+                          className="course-button"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
