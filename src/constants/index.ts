@@ -11,6 +11,7 @@ import {
   BootstrapIcon,
   PostgreSQLIcon,
   EnglishIcon,
+  LinkedinIcon
 } from "../assets/svg/index";
 
 export const TECHNOLOGIES_OBJECT = {
@@ -26,6 +27,7 @@ export const TECHNOLOGIES_OBJECT = {
   bootstrap: { name: "Bootstrap", icon: BootstrapIcon },
   postgreSQL: { name: "PostgreSQL", icon: PostgreSQLIcon },
   english: { name: "English", icon: EnglishIcon },
+  linkedin: { name: "Linkedin", icon: LinkedinIcon },
 };
 
 const {

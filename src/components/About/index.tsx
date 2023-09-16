@@ -1,54 +1,50 @@
-import { LinkedinIcon, GithubIcon } from "../../assets/svg";
 import josephImage from "../../assets/img/foto-joseph.jpeg";
+import { TECHNOLOGIES_OBJECT } from "../../constants";
 import "./index.css";
 
 interface IconProps {
   profileUrl: string;
   width: string;
   height: string;
-  Icon: React.FC<{ width?: string; height?: string }>; // How to import a React component, in this case a svg file
+  icon: {
+    name: string;
+    icon: React.FC<{ width?: string; height?: string }>;
+  };
 }
 
 const IconLinkEnvelop: React.FC<IconProps> = ({
   profileUrl,
   width,
   height,
-  Icon,
+  icon,
 }) => {
-  let title = "";
-  if (Icon === GithubIcon) {
-    title = "GitHub";
-  }
-  if (Icon === LinkedinIcon) {
-    title = "Linkedin";
-  }
-
   return (
     <a
       href={profileUrl}
       target="_blank"
       rel="noopener noreferrer"
-      title={title}
+      title={icon.name}
     >
-      <Icon width={width} height={height} />
+      <icon.icon width={width} height={height} />
     </a>
   );
 };
 
 const About = () => {
+  const { github, linkedin } = TECHNOLOGIES_OBJECT;
   const myGitHubUrl = "https://github.com/GlaucusJoseph";
   const myLinkedinUrl = "https://www.linkedin.com/in/josephortegaglaucus/";
 
   return (
     <section id="about">
-      <div className="container border-shadow about-box">
+      <div className="container about-box about-border-shadow">
         <div className="row">
-          <div className="col-12 col-md-4 main-content-box">
-            <div className="image-container">
+          <div className="col-12 col-md-4 about-content-box">
+            <div className="about-image-container about-img-shadow">
               <img src={josephImage} alt="Joseph" />
             </div>
           </div>
-          <div className="col-12 col-md-7 main-content-box">
+          <div className="col-12 col-md-7 about-content-box">
             <h3>
               Hi, I am&nbsp;
               <label className="special-text-color">Joseph Ortega</label>!
@@ -71,13 +67,13 @@ const About = () => {
                 profileUrl={myLinkedinUrl}
                 width="70"
                 height="70"
-                Icon={LinkedinIcon}
+                icon={linkedin}
               />
               <IconLinkEnvelop
                 profileUrl={myGitHubUrl}
                 width="70"
                 height="70"
-                Icon={GithubIcon}
+                icon={github}
               />
             </div>
           </div>
