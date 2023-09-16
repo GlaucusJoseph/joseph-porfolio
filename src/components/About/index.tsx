@@ -1,4 +1,4 @@
-import josephImage from "../../assets/img/foto-joseph.jpeg";
+import josephImage from "../../assets/img/joseph-photo.png";
 import { TECHNOLOGIES_OBJECT } from "../../constants";
 import "./index.css";
 
