@@ -42,7 +42,12 @@ const Courses = () => {
                     </div>
                     {course.url && (
                       <div>
-                        <a href={course.url} className="boton-enlace">
+                        <a
+                          href={course.url}
+                          className="boton-enlace"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           View certificate
                         </a>
                       </div>

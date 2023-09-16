@@ -6,23 +6,22 @@
 
 .courses-tags {
   display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas nuevas */
 }
 
 .courses-tag {
-  margin-right: 0.5rem;
+  margin-bottom: 0.5rem; /* Agrega un margen inferior para separar las tecnologías verticalmente */
   background-color: #243b53;
   height: 2rem;
   padding: 0.2rem 0.4rem;
   border: 1px solid #486581;
   border-radius: 50px;
   user-select: none;
-  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-  overflow: hidden; /* Oculta el texto que no cabe en el contenedor */
-  text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto cortado */
+  display: block; /* Muestra cada tecnología en una línea nueva */
 }
 
 .course-box-size {
-  height: 7rem;
+  margin-bottom: 1.5rem;
 }
 
 .course-box-size a {
@@ -33,8 +32,9 @@
 
 /* Estilo base del botón */
 .boton-enlace {
+  user-select: none;
   padding: 5px; /* Ajusta el relleno según tus preferencias */
-  background-color: #007bff; /* Color de fondo del botón */
+  background-color: #0c6b58; /* Color de fondo del botón */
   color: #fff; /* Color del texto del botón */
   text-decoration: none; /* Elimina la subrayado predeterminado del enlace */
   border: none; /* Elimina el borde predeterminado */
@@ -45,5 +45,5 @@
 
 /* Cambia el color de fondo al pasar el cursor sobre el botón */
 .boton-enlace:hover {
-  background-color: #0056b3; /* Nuevo color de fondo al pasar el cursor */
+  background-color: #014d40; /* Nuevo color de fondo al pasar el cursor */
 }
