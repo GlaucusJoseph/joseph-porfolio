@@ -1,33 +1,38 @@
 import { CSSTransition } from "react-transition-group";
 import docmoviLogo from "../../assets/img/docmovi-logo.webp";
-import {
-  CypressIcon,
-  GitIcon,
-  GithubIcon,
-  JavaScriptIcon,
-  MeteorIcon,
-  MongoDBIcon,
-  NodeJSIcon,
-  ReactIcon,
-  TypeScriptIcon,
-} from "../../assets/svg";
 import "./index.css";
 import Title from "../Title";
 import { useState } from "react";
+import { TECHNOLOGIES_OBJECT } from "../../constants";
 
 const WorkExperience = () => {
-  const iconsList = [
-    JavaScriptIcon,
-    NodeJSIcon,
-    ReactIcon,
-    TypeScriptIcon,
-    MeteorIcon,
-    MongoDBIcon,
-    CypressIcon,
-    GitIcon,
-    GithubIcon,
-  ];
   const [isOpen, setIsOpen] = useState(true);
+
+  const {
+    git,
+    github,
+    reactjs,
+    javascript,
+    nodejs,
+    bootstrap,
+    typescript,
+    meteorjs,
+    cypress,
+    mongodb,
+  } = TECHNOLOGIES_OBJECT;
+
+  const docmoviStack = [
+    javascript,
+    nodejs,
+    reactjs,
+    typescript,
+    meteorjs,
+    mongodb,
+    cypress,
+    github,
+    git,
+    bootstrap,
+  ];
 
   return (
     <section id="experience">
@@ -59,17 +64,17 @@ const WorkExperience = () => {
                   <label>July, 2022 - Present</label>
                 </div>
                 <div className="col-12 mt-2">
-                  <div className="icons-space">
-                    {iconsList.map((Icon, index) => (
-                      <div className="icon-with-text" key={index}>
-                        <Icon width="30" height="30" />
+                  <div className="work-icons-space">
+                    {docmoviStack.map((technology, index) => (
+                      <div className="work-icon-with-text" key={index}>
+                        <technology.icon width="30" height="30" />
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 hide-on-mobile">
+            <div className="col-md-6 work-hide-on-mobile">
               <ul>
                 <li>
                   Conducted maintenance, bug fixes, and made optimizations using

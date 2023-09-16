@@ -11,7 +11,12 @@ import {
   BootstrapIcon,
   PostgreSQLIcon,
   EnglishIcon,
-  LinkedinIcon
+  LinkedinIcon,
+  ReactIcon,
+  TypeScriptIcon,
+  CypressIcon,
+  MeteorIcon,
+  MongoDBIcon,
 } from "../assets/svg/index";
 
 export const TECHNOLOGIES_OBJECT = {
@@ -28,6 +33,11 @@ export const TECHNOLOGIES_OBJECT = {
   postgreSQL: { name: "PostgreSQL", icon: PostgreSQLIcon },
   english: { name: "English", icon: EnglishIcon },
   linkedin: { name: "Linkedin", icon: LinkedinIcon },
+  reactjs: { name: "React", icon: ReactIcon },
+  typescript: { name: "TypeScript", icon: TypeScriptIcon },
+  cypress: { name: "Cypress", icon: CypressIcon },
+  meteorjs: { name: "Meteor.Js", icon: MeteorIcon },
+  mongodb: { name: "MongoDB", icon: MongoDBIcon },
 };
 
 const {

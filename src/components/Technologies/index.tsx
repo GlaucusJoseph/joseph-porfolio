@@ -1,32 +1,34 @@
 import { CSSTransition } from "react-transition-group";
-import {
-  CSharpIcon,
-  CypressIcon,
-  GitIcon,
-  GithubIcon,
-  JavaScriptIcon,
-  MeteorIcon,
-  MongoDBIcon,
-  NodeJSIcon,
-  ReactIcon,
-  TypeScriptIcon,
-} from "../../assets/svg";
 import "./index.css";
 import Title from "../Title";
 import { useState } from "react";
+import { TECHNOLOGIES_OBJECT } from "../../constants";
 
 const Technologies = () => {
-  const iconsList = [
-    { Icon: JavaScriptIcon, text: "JavaScript" },
-    { Icon: NodeJSIcon, text: "NodeJS" },
-    { Icon: ReactIcon, text: "React.js" },
-    { Icon: TypeScriptIcon, text: "TypeScript" },
-    { Icon: MeteorIcon, text: "Meteor.js" },
-    { Icon: MongoDBIcon, text: "MongoDB" },
-    { Icon: CypressIcon, text: "Cypress" },
-    { Icon: CSharpIcon, text: "C#" },
-    { Icon: GitIcon, text: "Git" },
-    { Icon: GithubIcon, text: "GitHub" },
+  const {
+    csharp,
+    git,
+    github,
+    reactjs,
+    javascript,
+    nodejs,
+    bootstrap,
+    typescript,
+    meteorjs,
+    cypress,
+  } = TECHNOLOGIES_OBJECT;
+
+  const myStackList = [
+    javascript,
+    nodejs,
+    reactjs,
+    typescript,
+    meteorjs,
+    cypress,
+    csharp,
+    github,
+    git,
+    bootstrap,
   ];
 
   const [isOpen, setIsOpen] = useState(true);
@@ -42,11 +44,13 @@ const Technologies = () => {
           classNames="fade"
           unmountOnExit
         >
-          <div className="container icons-space">
-            {iconsList.map((icon, index) => (
-              <div className="icon-with-text" key={index}>
-                <icon.Icon width="70" height="70" />
-                <span className="icon-text">{icon.text}</span>
+          <div className="container technology-icons-space">
+            {myStackList.map((stackTechnology, index) => (
+              <div className="technology-icon-with-text" key={index}>
+                <stackTechnology.icon width="70" height="70" />
+                <span className="technology-icon-text">
+                  {stackTechnology.name}
+                </span>
               </div>
             ))}
           </div>

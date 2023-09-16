@@ -11,7 +11,38 @@
     align-items: center;
     text-align: center;
   }
-  .hide-on-mobile {
+  .work-hide-on-mobile {
     display: none;
+  }
+}
+
+.work-icon-with-text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+.work-icon-text {
+  margin-top: 0.4rem;
+}
+
+.work-icons-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Mobile view*/
+@media (max-width: 768px) {
+  .work-icons-space {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .work-icon-with-text {
+    margin: 0.5rem;
+    text-align: center;
   }
 }

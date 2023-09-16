@@ -3,7 +3,7 @@
   width: 85%;
 }
 
-.icon-with-text {
+.technology-icon-with-text {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -11,24 +11,24 @@
   margin-top: 0.4rem;
 }
 
-.icon-text {
+.technology-icon-text {
   margin-top: 0.4rem;
 }
 
-.icons-space {
+.technology-icons-space {
   display: flex;
   justify-content: space-between;
 }
 
 /*Mobile view*/
 @media (max-width: 768px) {
-  .icons-space {
+  .technology-icons-space {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .icon-with-text {
+  .technology-icon-with-text {
     margin: 0.5rem;
     text-align: center;
   }
