@@ -19,7 +19,6 @@ const Courses = () => {
         >
           <div className="row">
             {COURSES_OBJECT_LIST.map((course, index) => {
-              console.log(course);
               return (
                 <div className="col-12 col-md-6" key={index}>
                   <div className="row container course-box">
