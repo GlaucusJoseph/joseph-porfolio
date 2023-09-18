@@ -14,12 +14,11 @@
   margin-left: 0.1rem;
   border: 1px solid #486581;
   border-radius: 1rem;
-}
-
-.course-boxe a {
-  color: #f0f4f8;
-  text-decoration: none;
-  cursor: pointer;
+  border: 1px solid black;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  display: block;
 }
 
 /* TITLE */
@@ -64,4 +63,17 @@
 
 .course-button:hover {
   background-color: #014d40;
+}
+
+.courses-box-content {
+  column-count: 4;
+
+  height: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .courses-box-content {
+    column-count: 1;
+    width: calc(100% - 6vw);
+  }
 }

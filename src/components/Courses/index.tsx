@@ -17,41 +17,37 @@ const Courses = () => {
           classNames="fade"
           unmountOnExit
         >
-          <div className="row">
+          <div className="courses-box-content">
             {COURSES_OBJECT_LIST.map((course, index) => {
               return (
-                <div className="col-12 col-md-6" key={index}>
-                  <div className="row container course-box">
-                    <div className="col-12 course-title-envelop">
-                      <h6>
-                        {course.institution} /&nbsp;
-                        <span className="special-text-color">
-                          {course.title}
-                        </span>
-                      </h6>
-                    </div>
-                    <div className="col-12">
-                      <div className="courses-tags">
-                        {course.technologies.map((technology, index) => (
-                          <div key={index} className="courses-tag">
-                            &lt;{technology.name}/&gt;
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    {course.url && (
-                      <div className="course-button-envelop">
-                        <a
-                          href={course.url}
-                          className="course-button"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          View certificate
-                        </a>
-                      </div>
-                    )}
+                <div className="course-box" key={index}>
+                  <div className="course-title-envelop">
+                    <h6>
+                      {course.institution} /&nbsp;
+                      <span className="special-text-color">{course.title}</span>
+                    </h6>
                   </div>
+                  <div>
+                    <div className="courses-tags">
+                      {course.technologies.map((technology, index) => (
+                        <div key={index} className="courses-tag">
+                          &lt;{technology.name} /&gt;
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {course.url && (
+                    <div className="course-button-envelop">
+                      <a
+                        href={course.url}
+                        className="course-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View certificate
+                      </a>
+                    </div>
+                  )}
                 </div>
               );
             })}

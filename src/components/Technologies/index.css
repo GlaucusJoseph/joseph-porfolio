@@ -21,7 +21,7 @@
 }
 
 /*Mobile view*/
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .technology-icons-space {
     display: flex;
     flex-wrap: wrap;
