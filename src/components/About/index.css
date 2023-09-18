@@ -6,7 +6,7 @@
   display: flex;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .about-box {
     flex-direction: column;
     text-align: center;
@@ -28,7 +28,16 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4.9rem;
+  padding-right: 4.9rem;
+}
+
+@media (max-width: 991px) {
+  .about-content-box {
+    padding: 1rem;
+  }
 }
 
 /* IMG STYLE */
