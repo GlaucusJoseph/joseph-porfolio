@@ -38,44 +38,42 @@ const About = () => {
   return (
     <section id="about">
       <div className="container about-box about-border-shadow">
-        <div className="row">
-          <div className="col-12 col-md-4 about-content-box">
-            <div className="about-image-container about-img-shadow">
-              <img src={josephImage} alt="Joseph" />
-            </div>
+        <div className="about-content-box">
+          <div className="about-image-container about-img-shadow">
+            <img src={josephImage} alt="Joseph" />
           </div>
-          <div className="col-12 col-md-7 about-content-box">
-            <h3>
-              Hi, I am&nbsp;
-              <label className="special-text-color">Joseph Ortega</label>!
-            </h3>
-            <label className="my-3">
-              <span className="special-text-color">Full Stack Developer </span>
-              specializing in&nbsp;
-              <span className="special-text-color">
-                JavaScript, TypeScript, React, Node.js, Meteor.js, and Git
-              </span>
-              . Highly skilled in <span className="special-text-color">QA</span>
-              ,&nbsp;
-              <span className="special-text-color">API integration</span>, and
-              problem-solving, with a strong aptitude for teamwork and
-              adaptability. Committed to seeking innovative solutions and
-              contributing valuable skills to drive transformative outcomes.
-            </label>
-            <div className="container">
-              <IconLinkEnvelop
-                profileUrl={myLinkedinUrl}
-                width="70"
-                height="70"
-                icon={linkedin}
-              />
-              <IconLinkEnvelop
-                profileUrl={myGitHubUrl}
-                width="70"
-                height="70"
-                icon={github}
-              />
-            </div>
+        </div>
+        <div className="about-content-box">
+          <h3>
+            Hi, I am&nbsp;
+            <label className="special-text-color">Joseph Ortega</label>!
+          </h3>
+          <label className="my-3">
+            <span className="special-text-color">Full Stack Developer </span>
+            specializing in&nbsp;
+            <span className="special-text-color">
+              JavaScript, TypeScript, React, Node.js, Meteor.js, and Git
+            </span>
+            . Highly skilled in <span className="special-text-color">QA</span>
+            ,&nbsp;
+            <span className="special-text-color">API integration</span>, and
+            problem-solving, with a strong aptitude for teamwork and
+            adaptability. Committed to seeking innovative solutions and
+            contributing valuable skills to drive transformative outcomes.
+          </label>
+          <div className="container">
+            <IconLinkEnvelop
+              profileUrl={myLinkedinUrl}
+              width="70"
+              height="70"
+              icon={linkedin}
+            />
+            <IconLinkEnvelop
+              profileUrl={myGitHubUrl}
+              width="70"
+              height="70"
+              icon={github}
+            />
           </div>
         </div>
       </div>

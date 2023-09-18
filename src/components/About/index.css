@@ -3,6 +3,14 @@
   margin-top: 8rem;
   overflow: hidden;
   width: 85%;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .about-box {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .about-border-shadow {
