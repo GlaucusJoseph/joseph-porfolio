@@ -19,7 +19,7 @@ const Projects = () => {
         >
           <div className="container">
             <div className="row row-cols-1 row-cols-md-3 g-0 justify-content-center">
-              {PROJECTS_OBJECT_LIST.map((project, index) => {
+              {PROJECTS_OBJECT_LIST.map((_project, index) => {
                 return (
                   <div className="card" key={index}>
                     <img
