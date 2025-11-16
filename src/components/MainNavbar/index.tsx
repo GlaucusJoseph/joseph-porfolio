@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./index.css";
 
 const MainNavbar = () => {
@@ -21,21 +21,6 @@ const MainNavbar = () => {
     }
   };
 
-  useEffect(() => {
-    const links = document.querySelectorAll(".navbar-box-content a");
-    links.forEach((link) => {
-      const targetId = link.getAttribute("href")?.substring(1);
-      if (targetId) {
-        link.addEventListener("click", function (e) {
-          handleClick(
-            e as unknown as React.MouseEvent<HTMLAnchorElement>,
-            targetId
-          );
-        });
-      }
-    });
-  }, []);
-
   return (
     <nav
       className="navbar-box navbar-border-shadow"
@@ -44,25 +29,33 @@ const MainNavbar = () => {
     >
       <ul className="navbar-box-content">
         <li>
-          <a href="#about">About</a>
+          <a href="#about" onClick={(e) => handleClick(e, "about")}>
+            About
+          </a>
         </li>
         <li>
           <span className="navbar-separator">/</span>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#experience" onClick={(e) => handleClick(e, "experience")}>
+            Experience
+          </a>
         </li>
         <li>
           <span className="navbar-separator">/</span>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects" onClick={(e) => handleClick(e, "projects")}>
+            Projects
+          </a>
         </li>
         <li>
           <span className="navbar-separator">/</span>
         </li>
         <li>
-          <a href="#courses">Courses</a>
+          <a href="#courses" onClick={(e) => handleClick(e, "courses")}>
+            Courses
+          </a>
         </li>
       </ul>
     </nav>

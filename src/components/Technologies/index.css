@@ -1,6 +1,7 @@
 .technologies-box {
-  margin-top: 8rem;
+  margin-top: var(--section-margin);
   width: 85%;
+  max-width: 1200px;
 }
 
 .technology-icon-with-text {
@@ -9,10 +10,23 @@
   align-items: center;
   text-align: center;
   margin-top: 0.4rem;
+  transition: transform var(--transition-normal);
+  cursor: default;
+  padding: 0.5rem;
+}
+
+.technology-icon-with-text:hover {
+  transform: scale(1.1) translateY(-4px);
+}
+
+.technology-icon-with-text:hover .technology-icon-text {
+  color: var(--accent-green-light);
 }
 
 .technology-icon-text {
   margin-top: 0.4rem;
+  transition: color var(--transition-fast);
+  font-size: 0.9rem;
 }
 
 .technology-icons-space {

@@ -1,17 +1,47 @@
 :root {
-  background-color: #102a43;
+  /* Color Palette */
+  --primary-bg: #102a43;
+  --secondary-bg: #243d53;
+  --tertiary-bg: #334e68;
+  --border-color: #486581;
+  --accent-green: #3ebd93;
+  --accent-green-light: #8eedc7;
+  --accent-green-dark: #0d9274;
+  --text-primary: #f0f4f8;
+  --text-secondary: #bcccdc;
+  
+  /* Spacing */
+  --section-margin: 8rem;
+  --border-radius: 30px;
+  --border-radius-small: 1rem;
+  
+  /* Shadows */
+  --shadow-green: 0px 15px 12px rgba(62, 189, 147, 0.3);
+  --shadow-dark: 0px 19px 38px rgba(16, 42, 67, 0.5);
+  --shadow-navbar: 0px 2px 8px rgba(62, 189, 147, 0.5);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
 }
 
 body {
-  background-color: #102a43;
-  color: #f0f4f8;
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
 /* Line style and animation */
 .animated-line {
   position: relative;
   height: 2px;
-  background: linear-gradient(to right, green, #0d927c);
+  background: linear-gradient(to right, var(--accent-green), var(--accent-green-dark));
   margin: 20px 0;
   overflow: hidden;
 }
@@ -23,7 +53,7 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, green, #3498db);
+  background: linear-gradient(to right, var(--accent-green), #3498db);
   animation: colorChange 2s linear infinite;
 }
 
@@ -36,9 +66,10 @@ body {
   }
 }
 
-/* Higlight text */
+/* Highlight text */
 .special-text-color {
-  color: #8eedc7;
+  color: var(--accent-green-light);
+  font-weight: 500;
 }
 
 /* Toggle */

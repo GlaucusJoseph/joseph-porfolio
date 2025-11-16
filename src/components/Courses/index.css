@@ -1,24 +1,29 @@
 /* MAIN BOX */
 .courses-box {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: var(--section-margin);
+  margin-bottom: var(--section-margin);
   width: 85%;
+  max-width: 1200px;
 }
 
 /* INDIVIDUAL BOX */
 
 .course-box {
-  background-color: #243d53;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
-  margin-left: 0.1rem;
-  border: 1px solid #486581;
-  border-radius: 1rem;
-  border: 1px solid black;
-  padding: 5px 10px;
-  margin-bottom: 10px;
+  background-color: var(--secondary-bg);
+  margin: 0.2rem 0.1rem 10px 0.1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-small);
+  padding: 1rem 1.2rem;
   break-inside: avoid;
   display: block;
+  transition: all var(--transition-normal);
+  cursor: default;
+}
+
+.course-box:hover {
+  border-color: var(--accent-green);
+  box-shadow: 0px 4px 12px rgba(62, 189, 147, 0.2);
+  transform: translateY(-2px);
 }
 
 /* TITLE */
@@ -34,14 +39,21 @@
 }
 
 .courses-tag {
-  margin-bottom: 0.5rem;
-  background-color: #243b53;
+  margin: 0.3rem 0.5rem 0.5rem 0;
+  background-color: var(--primary-bg);
   height: 2rem;
-  padding: 0.2rem 0.4rem;
-  border: 1px solid #486581;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--border-color);
   border-radius: 50px;
   user-select: none;
-  display: block;
+  display: inline-block;
+  font-size: 0.85rem;
+  transition: all var(--transition-fast);
+}
+
+.courses-tag:hover {
+  border-color: var(--accent-green);
+  color: var(--accent-green-light);
 }
 
 /* BUTTONS */
@@ -51,18 +63,22 @@
 
 .course-button {
   user-select: none;
-  padding: 5px;
-  background-color: #0c6b58;
-  color: #fff;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--accent-green-dark);
+  color: var(--text-primary);
   text-decoration: none;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius-small);
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all var(--transition-normal);
+  font-weight: 500;
+  display: inline-block;
 }
 
 .course-button:hover {
-  background-color: #014d40;
+  background-color: var(--accent-green);
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(62, 189, 147, 0.3);
 }
 
 .courses-box-content {

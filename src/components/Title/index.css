@@ -7,33 +7,33 @@
 .toggle-switch {
   width: 60px;
   height: 30px;
-  background-color: rgb(173, 16, 16);
-  border: 3px solid #f0f4f8; 
+  background-color: rgba(173, 16, 16, 0.8);
+  border: 3px solid var(--text-primary); 
   border-radius: 15px;
   position: relative;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color var(--transition-normal);
 }
 
 .toggle-switch.on {
-  background-color: rgba(0, 224, 0, 0.61);
+  background-color: var(--accent-green);
 }
 
 .slider {
   width: 20px; 
   height: 20px; 
-  background-color: #f0f4f8;
+  background-color: var(--text-primary);
   border-radius: 50%;
   position: absolute;
   top: 50%; 
   left: 3px;
   transform: translateY(-50%);
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-normal);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .slider.on {
-  transform: translateX(30px) translateY(-50%); 
-
+  transform: translateX(30px) translateY(-50%);
   left: 2px;
-  background-color: #f0f4f8;
+  background-color: var(--text-primary);
 }

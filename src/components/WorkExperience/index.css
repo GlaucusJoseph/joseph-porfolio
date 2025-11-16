@@ -1,6 +1,7 @@
 .work-experience-box {
-  margin-top: 8rem;
+  margin-top: var(--section-margin);
   width: 85%;
+  max-width: 1200px;
 }
 
 .work-icon-with-text {
@@ -9,6 +10,12 @@
   align-items: center;
   text-align: center;
   margin-top: 0.4rem;
+  transition: transform var(--transition-normal);
+  cursor: default;
+}
+
+.work-icon-with-text:hover {
+  transform: scale(1.15) translateY(-4px);
 }
 
 .work-icon-text {
